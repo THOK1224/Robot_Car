@@ -1,0 +1,1792 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections
+      Id flags:  
+      
+      The output was:
+      1
+      o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/4.0.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      1
+      o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/4.0.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-cg9238"
+      binary: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-cg9238"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"O:/VS Code Community/GitHub/Robot_Car/STM32G474XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=Robot_Car.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-cg9238'
+        
+        Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_bec7c
+        [1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj -c C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj -Wall -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\Users\\THOK\\AppData\\Local\\Temp\\cc4OqBcX.s
+        GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\cc4OqBcX.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\THOK\\AppData\\Local\\stm32cube\\bundles\\cmake\\4.0.1+st.3\\bin\\cmake.exe -E rm -f libcmTC_bec7c.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_bec7c.a  CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_bec7c.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+        implicit include dirs: [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-cg9238']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_bec7c]
+        ignore line: [[1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj -c C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj -Wall -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\Users\\THOK\\AppData\\Local\\Temp\\cc4OqBcX.s]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f3937ce18b4177bfd408ca565336596a]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\cc4OqBcX.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\THOK\\AppData\\Local\\stm32cube\\bundles\\cmake\\4.0.1+st.3\\bin\\cmake.exe -E rm -f libcmTC_bec7c.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_bec7c.a  CMakeFiles/cmTC_bec7c.dir/CMakeCCompilerABI.c.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_bec7c.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-1gylgi"
+      binary: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-1gylgi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"O:/VS Code Community/GitHub/Robot_Car/STM32G474XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=Robot_Car.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-1gylgi'
+        
+        Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_ccb49
+        [1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj -Wall -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\Users\\THOK\\AppData\\Local\\Temp\\cctDcoSL.s
+        GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\cctDcoSL.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\THOK\\AppData\\Local\\stm32cube\\bundles\\cmake\\4.0.1+st.3\\bin\\cmake.exe -E rm -f libcmTC_ccb49.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_ccb49.a  CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_ccb49.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/backward]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+        implicit include dirs: [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/backward;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-1gylgi']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_ccb49]
+        ignore line: [[1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj -Wall -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\Users\\THOK\\AppData\\Local\\Temp\\cctDcoSL.s]
+        ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\cctDcoSL.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\THOK\\AppData\\Local\\stm32cube\\bundles\\cmake\\4.0.1+st.3\\bin\\cmake.exe -E rm -f libcmTC_ccb49.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_ccb49.a  CMakeFiles/cmTC_ccb49.dir/CMakeCXXCompilerABI.cpp.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_ccb49.a && cd ."]
+        ignore line: []
+        ignore line: []
+        linker tool for 'CXX': COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:264 (cmake_determine_linker_id)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe" "--version"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1230 (message)"
+      - "C:/Users/THOK/AppData/Local/stm32cube/bundles/cmake/4.0.1+st.3/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/"
+      - "O:/VS Code Community/Microsoft VS Code/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "G:/AI/cursor/resources/app/bin/"
+      - "O:/VS Code Community/Git/cmd/"
+      - "O:/VS Code Community/Microsoft VS Code/bin/"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/"
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/"
+      - "O:/VS Code Community/SCM Tool/OpenOCD-20260121-0.12.0/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "O:/SCM/FPGA/.xinstall/2025.2/bin/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Launcher/"
+      - "O:/VS Code Community/Can MV IDE/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/THOK/.dotnet/tools/"
+      - "C:/Program Files/mitmproxy/bin/"
+      - "C:/Users/THOK/AppData/Local/GitHubDesktop/bin/"
+      - "G:/steam/ext/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-essentials_build/bin/"
+    searched_directories:
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-gcc"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-gcc"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-gcc"
+      - "C:/Windows/System32/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/arm-none-eabi-gcc"
+      - "C:/Windows/arm-none-eabi-gcc.com"
+      - "C:/Windows/arm-none-eabi-gcc.exe"
+      - "C:/Windows/arm-none-eabi-gcc"
+      - "C:/Windows/System32/wbem/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/wbem/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/wbem/arm-none-eabi-gcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-gcc"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-gcc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-gcc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-gcc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-gcc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-gcc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-gcc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-gcc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-gcc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-gcc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-gcc"
+      - "C:/Program Files/dotnet/arm-none-eabi-gcc.com"
+      - "C:/Program Files/dotnet/arm-none-eabi-gcc.exe"
+      - "C:/Program Files/dotnet/arm-none-eabi-gcc"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-gcc.com"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-gcc.exe"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-gcc"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-gcc"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-gcc"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-gcc"
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.com"
+    found: "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/"
+    found: "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections
+      Id flags:  
+      
+      The output was:
+      1
+      o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/"
+    found: "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/4.2.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:58 (__resolve_tool_path)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/"
+      - "O:/VS Code Community/Microsoft VS Code/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "G:/AI/cursor/resources/app/bin/"
+      - "O:/VS Code Community/Git/cmd/"
+      - "O:/VS Code Community/Microsoft VS Code/bin/"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/"
+      - "O:/VS Code Community/SCM Tool/OpenOCD-20260121-0.12.0/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "O:/SCM/FPGA/.xinstall/2025.2/bin/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Launcher/"
+      - "O:/VS Code Community/Can MV IDE/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/THOK/.dotnet/tools/"
+      - "C:/Program Files/mitmproxy/bin/"
+      - "C:/Users/THOK/AppData/Local/GitHubDesktop/bin/"
+      - "G:/steam/ext/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-essentials_build/bin/"
+    searched_directories:
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.com"
+    found: "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-g++"
+    candidate_directories:
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/"
+      - "O:/VS Code Community/Microsoft VS Code/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "G:/AI/cursor/resources/app/bin/"
+      - "O:/VS Code Community/Git/cmd/"
+      - "O:/VS Code Community/Microsoft VS Code/bin/"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/"
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/"
+      - "O:/VS Code Community/SCM Tool/OpenOCD-20260121-0.12.0/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "O:/SCM/FPGA/.xinstall/2025.2/bin/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Launcher/"
+      - "O:/VS Code Community/Can MV IDE/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/THOK/.dotnet/tools/"
+      - "C:/Program Files/mitmproxy/bin/"
+      - "C:/Users/THOK/AppData/Local/GitHubDesktop/bin/"
+      - "G:/steam/ext/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-essentials_build/bin/"
+    searched_directories:
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-g++.com"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-g++.exe"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-g++"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-g++.com"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-g++.exe"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-g++"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-g++.com"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-g++.exe"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-g++"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-g++.com"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-g++.exe"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-g++"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-g++.com"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-g++.exe"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-g++"
+      - "C:/Windows/System32/arm-none-eabi-g++.com"
+      - "C:/Windows/System32/arm-none-eabi-g++.exe"
+      - "C:/Windows/System32/arm-none-eabi-g++"
+      - "C:/Windows/arm-none-eabi-g++.com"
+      - "C:/Windows/arm-none-eabi-g++.exe"
+      - "C:/Windows/arm-none-eabi-g++"
+      - "C:/Windows/System32/wbem/arm-none-eabi-g++.com"
+      - "C:/Windows/System32/wbem/arm-none-eabi-g++.exe"
+      - "C:/Windows/System32/wbem/arm-none-eabi-g++"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-g++.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-g++.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-g++"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-g++.com"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-g++.exe"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-g++"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-g++.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-g++.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-g++"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-g++.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-g++.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-g++"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-g++.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-g++.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-g++"
+      - "C:/Program Files/dotnet/arm-none-eabi-g++.com"
+      - "C:/Program Files/dotnet/arm-none-eabi-g++.exe"
+      - "C:/Program Files/dotnet/arm-none-eabi-g++"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-g++.com"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-g++.exe"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-g++"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-g++.com"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-g++.exe"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-g++"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-g++.com"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-g++.exe"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-g++"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-g++.com"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-g++.exe"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-g++"
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.com"
+    found: "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/"
+    found: "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      1
+      o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/"
+    found: "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe 
+      Build flags: -mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;-Wall;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/4.2.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-fs5tl0"
+      binary: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-fs5tl0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"O:/VS Code Community/GitHub/Robot_Car/STM32G474XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=Robot_Car.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-fs5tl0'
+        
+        Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_2cf80
+        [1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj -c "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj -Wall -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\Users\\THOK\\AppData\\Local\\Temp\\ccCMdUmk.s
+        GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\ccCMdUmk.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin\\cmake.exe" -E rm -f libcmTC_2cf80.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_2cf80.a  CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_2cf80.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+        implicit include dirs: [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-fs5tl0']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_2cf80]
+        ignore line: [[1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj -c "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj -Wall -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\Users\\THOK\\AppData\\Local\\Temp\\ccCMdUmk.s]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f3937ce18b4177bfd408ca565336596a]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\ccCMdUmk.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin\\cmake.exe" -E rm -f libcmTC_2cf80.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_2cf80.a  CMakeFiles/cmTC_2cf80.dir/CMakeCCompilerABI.c.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_2cf80.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-3oz344"
+      binary: "O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-3oz344"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T \"O:/VS Code Community/GitHub/Robot_Car/STM32G474XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=Robot_Car.map -Wl,--gc-sections -Wl,--print-memory-usage"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-3oz344'
+        
+        Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_06db1
+        [1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj -c "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj -Wall -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\Users\\THOK\\AppData\\Local\\Temp\\ccxhAtBw.s
+        GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"
+        ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed
+         o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+         o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\ccxhAtBw.s
+        GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
+        COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin\\cmake.exe" -E rm -f libcmTC_06db1.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_06db1.a  CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_06db1.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+          add: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/backward]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/include-fixed] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        collapse include dir [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include] ==> [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+        implicit include dirs: [O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include/c++/10.3.1/backward;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/arm-none-eabi/10.3.1/include-fixed;O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(arm-none-eabi-g\\+\\+\\.exe|;ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'O:/VS Code Community/GitHub/Robot_Car/build/Debug/CMakeFiles/CMakeScratch/TryCompile-3oz344']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/ninja.exe -v cmTC_06db1]
+        ignore line: [[1/2] "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe"   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj -c "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-g++.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10.3-2021.10' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi -D__USES_INITFINI__ O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -mlibarch=armv7e-m+fp -march=armv7e-m+fp -auxbase-strip CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj -Wall -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\Users\\THOK\\AppData\\Local\\Temp\\ccxhAtBw.s]
+        ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-338_20211018_1634516203/install-mingw/lib/gcc/arm-none-eabi/10.3.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/lib/gcc/../../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed]
+        ignore line: [ o:\\vs code community\\scm tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [ o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\THOK\\AppData\\Local\\Temp\\ccxhAtBw.s]
+        ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
+        ignore line: [COMPILER_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
+        ignore line: [o:/vs code community/scm tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp']
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin\\cmake.exe" -E rm -f libcmTC_06db1.a && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ar.exe" qc libcmTC_06db1.a  CMakeFiles/cmTC_06db1.dir/CMakeCXXCompilerABI.cpp.obj && "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin\\arm-none-eabi-ranlib.exe" libcmTC_06db1.a && cd ."]
+        ignore line: []
+        ignore line: []
+        linker tool for 'CXX': COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe" "-v"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe" "-V"
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:28 (project)"
+    message: |
+      Running the CXX compiler's linker: "COLLECT_GCC=O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-g++.exe" "--version"
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:64 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:32 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "arm-none-eabi-gcc"
+    candidate_directories:
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/"
+      - "O:/VS Code Community/Microsoft VS Code/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "G:/AI/cursor/resources/app/bin/"
+      - "O:/VS Code Community/Git/cmd/"
+      - "O:/VS Code Community/Microsoft VS Code/bin/"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/"
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/"
+      - "O:/VS Code Community/SCM Tool/OpenOCD-20260121-0.12.0/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "O:/SCM/FPGA/.xinstall/2025.2/bin/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/Scripts/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Python312/"
+      - "C:/Users/THOK/AppData/Local/Programs/Python/Launcher/"
+      - "O:/VS Code Community/Can MV IDE/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/THOK/.dotnet/tools/"
+      - "C:/Program Files/mitmproxy/bin/"
+      - "C:/Users/THOK/AppData/Local/GitHubDesktop/bin/"
+      - "G:/steam/ext/bin/"
+      - "C:/Users/THOK/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-essentials_build/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/arm-none-eabi-gcc"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/arm-none-eabi-gcc"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64/resources/binaries/win32/x86_64/arm-none-eabi-gcc"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-gcc.com"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-gcc.exe"
+      - "C:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64/arm-none-eabi-gcc"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/Microsoft VS Code/arm-none-eabi-gcc"
+      - "C:/Windows/System32/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/arm-none-eabi-gcc"
+      - "C:/Windows/arm-none-eabi-gcc.com"
+      - "C:/Windows/arm-none-eabi-gcc.exe"
+      - "C:/Windows/arm-none-eabi-gcc"
+      - "C:/Windows/System32/wbem/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/wbem/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/wbem/arm-none-eabi-gcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/arm-none-eabi-gcc"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-gcc.com"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-gcc.exe"
+      - "C:/Windows/System32/OpenSSH/arm-none-eabi-gcc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-gcc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-gcc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/arm-none-eabi-gcc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-gcc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-gcc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/arm-none-eabi-gcc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-gcc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-gcc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/arm-none-eabi-gcc"
+      - "C:/Program Files/dotnet/arm-none-eabi-gcc.com"
+      - "C:/Program Files/dotnet/arm-none-eabi-gcc.exe"
+      - "C:/Program Files/dotnet/arm-none-eabi-gcc"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-gcc.com"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-gcc.exe"
+      - "G:/AI/cursor/resources/app/bin/arm-none-eabi-gcc"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/Git/cmd/arm-none-eabi-gcc"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/Microsoft VS Code/bin/arm-none-eabi-gcc"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-gcc.com"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-gcc.exe"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/bin/arm-none-eabi-gcc"
+      - "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.com"
+    found: "O:/VS Code Community/SCM Tool/gcc-arm-none-eabi-10.3-2021.10-win32/bin/arm-none-eabi-gcc.exe"
+    search_context:
+      ENV{PATH}:
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\THOK\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "c:\\Users\\THOK\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.2.1-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/THOK/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.44.0-win32-x64/resources/cube-cmake/win32/x86_64"
+        - "O:\\VS Code Community\\Microsoft VS Code"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "G:\\AI\\cursor\\resources\\app\\bin"
+        - "O:\\VS Code Community\\Git\\cmd"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Python312\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "O:\\VS Code Community\\Can MV IDE\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\THOK\\.dotnet\\tools"
+        - "C:\\Program Files\\mitmproxy\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\GitHubDesktop\\bin"
+        - "g:\\steam\\ext\\bin"
+        - "O:\\VS Code Community\\Microsoft VS Code\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\cmake-4.2.3-windows-x86_64\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\gcc-arm-none-eabi-10.3-2021.10-win32\\bin"
+        - "O:\\VS Code Community\\SCM Tool\\OpenOCD-20260121-0.12.0\\bin"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\THOK\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-essentials_build/bin"
+        - "O:\\SCM\\FPGA\\.xinstall\\2025.2\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Robot_Car"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "O:/VS Code Community/SCM Tool/cmake-4.2.3-windows-x86_64/share/cmake-4.2/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:32 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10.3-2021.10) 10.3.1 20210824 (release)
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

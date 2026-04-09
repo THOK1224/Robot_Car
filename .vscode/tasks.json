@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake: configure Debug",
+            "type": "shell",
+            "command": "cmake --preset Debug",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake Configure (Debug preset)"
+        },
+        {
+            "label": "cmake: build Debug",
+            "type": "shell",
+            "command": "cmake --build ${workspaceFolder}/build/Debug --config Debug -j4",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "CMake Build (Debug)",
+            "dependsOn": "cmake: configure Debug"
+        },
+        {
+            "label": "cmake: configure Release",
+            "type": "shell",
+            "command": "cmake --preset Release",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake Configure (Release preset)"
+        },
+        {
+            "label": "cmake: build Release",
+            "type": "shell",
+            "command": "cmake --build ${workspaceFolder}/build/Release --config Release -j4",
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "CMake Build (Release)",
+            "dependsOn": "cmake: configure Release"
+        }
+    ]
+}
