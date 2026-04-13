@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"O:/VS Code Community/GitHub/Robot_Car/build/Debug/cmake_install.cmake",
-		"O:/VS Code Community/GitHub/Robot_Car/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

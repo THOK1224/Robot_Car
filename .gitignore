@@ -1,0 +1,5 @@
+build/
+.vscode/
+CMakePresets.json
+mx.scratch
+!.settings
