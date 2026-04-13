@@ -49,44 +49,6 @@ void PS2_Control_init(void) {
 void PS2_Control_update(void) {
     const PS2_instance_t *ps2 = PS2_get_instance();
 
-    // 测试按下
-    if (ps2->buttons_edge & PS2_BTN_START) {
-        Uart_printf(test_uart, "START button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_SELECT) {
-        Uart_printf(test_uart, "SELECT button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_SQUARE) {
-        Uart_printf(test_uart, "SQUARE button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_CIRCLE) {
-        Uart_printf(test_uart, "CIRCLE button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_TRIANGLE) {
-        Uart_printf(test_uart, "TRIANGLE button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_CROSS) {
-        Uart_printf(test_uart, "CROSS button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_L3) {
-        Uart_printf(test_uart, "L3 button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_R3) {
-        Uart_printf(test_uart, "R3 button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_L2) {
-        Uart_printf(test_uart, "L2 button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_R2) {
-        Uart_printf(test_uart, "R2 button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_L1) {
-        Uart_printf(test_uart, "L1 button pressed\r\n");
-    }
-    if (ps2->buttons_edge & PS2_BTN_R1) {
-        Uart_printf(test_uart, "R1 button pressed\r\n");
-    }
-
     /* PS2 未连接 → 零力 */
     if (!ps2->connected) {
         ctrl_inst.cmd.vx = 0.0f;
@@ -128,12 +90,8 @@ void PS2_Control_update(void) {
     }
 
     /* 发布底盘指令 */
-    const Chassis_cmd_t *cmd = PS2_Control_get_cmd();
-    xQueueOverwrite(Chassis_cmd_queue, cmd);
+    xQueueOverwrite(Chassis_cmd_queue, &ctrl_inst.cmd);
 }
 
-const Chassis_cmd_t *PS2_Control_get_cmd(void)
-{
-    return &ctrl_inst.cmd;
-}
+
 

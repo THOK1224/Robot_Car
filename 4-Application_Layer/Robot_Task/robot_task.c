@@ -46,12 +46,12 @@ void Robot_task_init(void)
     /* === 创建任务 === */
 
     /* motor_task: 最高优先级, 接收轮速→I2C 发送 */
-    // const osThreadAttr_t motor_attr = {
-    //     .name = "motor_task",
-    //     .priority = (osPriority_t)osPriorityAboveNormal,
-    //     .stack_size = 512 * 4
-    // };
-    // motor_task_handle = osThreadNew(Motor_task, NULL, &motor_attr);
+    const osThreadAttr_t motor_attr = {
+        .name = "motor_task",
+        .priority = (osPriority_t)osPriorityAboveNormal,
+        .stack_size = 512 * 4
+    };
+    motor_task_handle = osThreadNew(Motor_task, NULL, &motor_attr);
 
     /* sensor_task: 采集 IMU + 超声波 */
     // const osThreadAttr_t sensor_attr = {
@@ -62,12 +62,12 @@ void Robot_task_init(void)
     // sensor_task_handle = osThreadNew(Sensor_task, NULL, &sensor_attr);
 
     /* chassis_task: 运动学解算 */
-    // const osThreadAttr_t chassis_attr = {
-    //     .name = "chassis_task",
-    //     .priority = (osPriority_t)osPriorityNormal,
-    //     .stack_size = 512 * 4
-    // };
-    // chassis_task_handle = osThreadNew(Chassis_task, NULL, &chassis_attr);
+    const osThreadAttr_t chassis_attr = {
+        .name = "chassis_task",
+        .priority = (osPriority_t)osPriorityNormal,
+        .stack_size = 512 * 4
+    };
+    chassis_task_handle = osThreadNew(Chassis_task, NULL, &chassis_attr);
 
     /* decision_making_task: PS2 → 底盘指令 */
     const osThreadAttr_t decision_attr = {

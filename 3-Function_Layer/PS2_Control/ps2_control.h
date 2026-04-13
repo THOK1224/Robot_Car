@@ -36,10 +36,4 @@ void PS2_Control_init(void);
  */
 void PS2_Control_update(void);
 
-/**
- * @brief 获取底盘指令
- */
-const Chassis_cmd_t *PS2_Control_get_cmd(void);
-
-
 #endif /* _PS2_CONTROL_H */
