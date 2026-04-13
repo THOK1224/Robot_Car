@@ -1,5 +1,58 @@
+# ------------------------------------------------
+# 构建目录
+# ------------------------------------------------
 build/
-.vscode/
+cmake-build-*/
+Debug/
+Release/
+out/
+
+# ------------------------------------------------
+# CMake / Ninja 生成文件
+# ------------------------------------------------
 CMakePresets.json
-mx.scratch
-!.settings
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+install_manifest.txt
+Testing/
+Makefile
+build.ninja
+.ninja_log
+.ninja_deps
+*.ninja
+
+# ------------------------------------------------
+# 常见编译与链接产物
+# ------------------------------------------------
+*.o
+*.obj
+*.d
+*.a
+*.lib
+*.elf
+*.axf
+*.map
+*.hex
+*.bin
+*.lst
+
+# ------------------------------------------------
+# IDE / 编辑器配置
+# ------------------------------------------------
+.idea/
+.vscode/
+.settings/
+*.code-workspace
+
+# STM32CubeIDE / CubeMX 本地工程文件
+.project
+.cproject
+
+# ------------------------------------------------
+# 系统垃圾文件
+# ------------------------------------------------
+.DS_Store
+Thumbs.db

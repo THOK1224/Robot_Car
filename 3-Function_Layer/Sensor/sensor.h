@@ -29,7 +29,7 @@ typedef struct {
  * @brief 初始化传感器模块
  * @param imu_cfg DM-IMU 初始化配置 (可 NULL 跳过)
  */
-void Sensor_init(DM_IMU_init_config_t *imu_cfg);
+void Sensor_init(void);
 
 /**
  * @brief 更新传感器数据 (周期调用)

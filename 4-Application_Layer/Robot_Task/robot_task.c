@@ -36,7 +36,7 @@ void Robot_task_init(void)
     /* === BSP 初始化 === */
     DWT_Init(CPU_FREQ_MHZ);
     test_uart = Uart_register(&huart1, NULL);
-    error_system_init(test_uart);
+    error_system_init(NULL);
     Can_init();
 
     /* === 创建队列 (必须在任务之前) === */
@@ -46,28 +46,28 @@ void Robot_task_init(void)
     /* === 创建任务 === */
 
     /* motor_task: 最高优先级, 接收轮速→I2C 发送 */
-    const osThreadAttr_t motor_attr = {
-        .name = "motor_task",
-        .priority = (osPriority_t)osPriorityAboveNormal,
-        .stack_size = 512 * 4
-    };
-    motor_task_handle = osThreadNew(Motor_task, NULL, &motor_attr);
+    // const osThreadAttr_t motor_attr = {
+    //     .name = "motor_task",
+    //     .priority = (osPriority_t)osPriorityAboveNormal,
+    //     .stack_size = 512 * 4
+    // };
+    // motor_task_handle = osThreadNew(Motor_task, NULL, &motor_attr);
 
     /* sensor_task: 采集 IMU + 超声波 */
-    const osThreadAttr_t sensor_attr = {
-        .name = "sensor_task",
-        .priority = (osPriority_t)osPriorityNormal,
-        .stack_size = 512 * 4
-    };
-    sensor_task_handle = osThreadNew(Sensor_task, NULL, &sensor_attr);
+    // const osThreadAttr_t sensor_attr = {
+    //     .name = "sensor_task",
+    //     .priority = (osPriority_t)osPriorityNormal,
+    //     .stack_size = 512 * 4
+    // };
+    // sensor_task_handle = osThreadNew(Sensor_task, NULL, &sensor_attr);
 
     /* chassis_task: 运动学解算 */
-    const osThreadAttr_t chassis_attr = {
-        .name = "chassis_task",
-        .priority = (osPriority_t)osPriorityNormal,
-        .stack_size = 512 * 4
-    };
-    chassis_task_handle = osThreadNew(Chassis_task, NULL, &chassis_attr);
+    // const osThreadAttr_t chassis_attr = {
+    //     .name = "chassis_task",
+    //     .priority = (osPriority_t)osPriorityNormal,
+    //     .stack_size = 512 * 4
+    // };
+    // chassis_task_handle = osThreadNew(Chassis_task, NULL, &chassis_attr);
 
     /* decision_making_task: PS2 → 底盘指令 */
     const osThreadAttr_t decision_attr = {
@@ -78,12 +78,12 @@ void Robot_task_init(void)
     decision_task_handle = osThreadNew(Decision_making_task, NULL, &decision_attr);
 
     /* test_task: 调试 */
-    const osThreadAttr_t test_attr = {
-        .name = "test_task",
-        .priority = (osPriority_t)osPriorityBelowNormal,
-        .stack_size = 256 * 4
-    };
-    test_task_handle = osThreadNew(Test_task, NULL, &test_attr);
+    // const osThreadAttr_t test_attr = {
+    //     .name = "test_task",
+    //     .priority = (osPriority_t)osPriorityBelowNormal,
+    //     .stack_size = 256 * 4
+    // };
+    // test_task_handle = osThreadNew(Test_task, NULL, &test_attr);
 }
 
 /* ================= Motor Task ================= */
@@ -124,17 +124,9 @@ static void Sensor_task(void *argument)
 {
     (void)argument;
 
-    /* 初始化传感器 */
-    DM_IMU_init_config_t imu_cfg = {
-        .fdcan_handle = &hfdcan1,
-        .can_id       = DM_IMU_CAN_ID,
-        .mst_id       = DM_IMU_MST_ID,
-        .mode         = DM_IMU_MODE_ACTIVE,
-        .interval_ms  = DM_IMU_INTERVAL_MS,
-    };
-    Sensor_init(&imu_cfg);
+    Sensor_init();
 
-    TickType_t *PreviousWakeTime = xTaskGetTickCount();
+    TickType_t PreviousWakeTime = xTaskGetTickCount();
 
     for (;;)
     {

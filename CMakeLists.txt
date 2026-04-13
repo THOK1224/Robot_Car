@@ -46,6 +46,8 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Middleware Layer
     0-Middleware_Layer/Pid_Controller/algorithm_pid.c
+    0-Middleware_Layer/Kalman_Fliter/algorithm_ekf.c
+    0-Middleware_Layer/Kalman_Fliter/algorithm_kf.c
     0-Middleware_Layer/Message_Center/message_center.c
     0-Middleware_Layer/Error_System/src/error_handler.c
     0-Middleware_Layer/Error_System/src/error_port.c
@@ -78,6 +80,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Middleware Layer
     0-Middleware_Layer/Pid_Controller
+    0-Middleware_Layer/Kalman_Fliter
     0-Middleware_Layer/Math_lib
     0-Middleware_Layer/Message_Center
     0-Middleware_Layer/Error_System/inc
