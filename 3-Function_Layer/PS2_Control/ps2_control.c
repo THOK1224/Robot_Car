@@ -7,7 +7,11 @@
  *          START       → 切换模式
  *          用户可根据需求修改映射
  */
+
+#include "bsp_usart.h"
+#include "ps2_driver.h"
 #include "ps2_control.h"
+#include "robot_task.h"
 
 /* ================= 私有变量 ================= */
 
@@ -23,8 +27,7 @@ static PS2_control_instance_t ctrl_inst;
 /**
  * @brief 摇杆值转换为归一化值 (-1.0 ~ 1.0)
  */
-static float _stick_to_float(uint8_t raw)
-{
+static float _stick_to_float(uint8_t raw) {
     int16_t centered = (int16_t)raw - STICK_CENTER;
 
     if (centered > -STICK_DEADZONE && centered < STICK_DEADZONE)
@@ -35,8 +38,7 @@ static float _stick_to_float(uint8_t raw)
 
 /* ================= 公开接口 ================= */
 
-void PS2_Control_init(void)
-{
+void PS2_Control_init(void) {
     ctrl_inst.mode = PS2_CTRL_MODE_IDLE;
     ctrl_inst.cmd.vx = 0.0f;
     ctrl_inst.cmd.vy = 0.0f;
@@ -44,13 +46,49 @@ void PS2_Control_init(void)
     ctrl_inst.speed_scale = 500.0f;  /* 默认最大 500 mm/s, 可调 */
 }
 
-void PS2_Control_update(void)
-{
-    const PS2_instance_t *ps2 = PS2_get_data();
+void PS2_Control_update(void) {
+    const PS2_instance_t *ps2 = PS2_get_instance();
+
+    // 测试按下
+    if (ps2->buttons_edge & PS2_BTN_START) {
+        Uart_printf(test_uart, "START button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_SELECT) {
+        Uart_printf(test_uart, "SELECT button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_SQUARE) {
+        Uart_printf(test_uart, "SQUARE button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_CIRCLE) {
+        Uart_printf(test_uart, "CIRCLE button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_TRIANGLE) {
+        Uart_printf(test_uart, "TRIANGLE button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_CROSS) {
+        Uart_printf(test_uart, "CROSS button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_L3) {
+        Uart_printf(test_uart, "L3 button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_R3) {
+        Uart_printf(test_uart, "R3 button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_L2) {
+        Uart_printf(test_uart, "L2 button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_R2) {
+        Uart_printf(test_uart, "R2 button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_L1) {
+        Uart_printf(test_uart, "L1 button pressed\r\n");
+    }
+    if (ps2->buttons_edge & PS2_BTN_R1) {
+        Uart_printf(test_uart, "R1 button pressed\r\n");
+    }
 
     /* PS2 未连接 → 零力 */
-    if (!ps2->connected)
-    {
+    if (!ps2->connected) {
         ctrl_inst.cmd.vx = 0.0f;
         ctrl_inst.cmd.vy = 0.0f;
         ctrl_inst.cmd.omega = 0.0f;
@@ -59,16 +97,14 @@ void PS2_Control_update(void)
     }
 
     /* START 键切换模式 */
-    if (PS2_is_edge(PS2_BTN_START))
-    {
+    if (ps2->buttons_edge & PS2_BTN_START) {
         if (ctrl_inst.mode == PS2_CTRL_MODE_IDLE)
             ctrl_inst.mode = PS2_CTRL_MODE_MANUAL;
         else
             ctrl_inst.mode = PS2_CTRL_MODE_IDLE;
     }
 
-    if (ctrl_inst.mode == PS2_CTRL_MODE_MANUAL)
-    {
+    if (ctrl_inst.mode == PS2_CTRL_MODE_MANUAL) {
         /* 左摇杆 → 平移 */
         float ly_norm = -_stick_to_float(ps2->ly); /* Y 轴反转: 向上为正 */
         float lx_norm =  _stick_to_float(ps2->lx);
@@ -81,17 +117,19 @@ void PS2_Control_update(void)
         ctrl_inst.cmd.omega = rx_norm * 3.14f;  /* 最大约 π rad/s */
 
         /* L1/R1 调速 (示例) */
-        if (PS2_is_edge(PS2_BTN_R1) && ctrl_inst.speed_scale < 1000.0f)
+        if (ps2->buttons_edge & PS2_BTN_R1 && ctrl_inst.speed_scale < 1000.0f)
             ctrl_inst.speed_scale += 100.0f;
-        if (PS2_is_edge(PS2_BTN_L1) && ctrl_inst.speed_scale > 100.0f)
+        if (ps2->buttons_edge & PS2_BTN_L1 && ctrl_inst.speed_scale > 100.0f)
             ctrl_inst.speed_scale -= 100.0f;
-    }
-    else
-    {
+    } else {
         ctrl_inst.cmd.vx = 0.0f;
         ctrl_inst.cmd.vy = 0.0f;
         ctrl_inst.cmd.omega = 0.0f;
     }
+
+    /* 发布底盘指令 */
+    const Chassis_cmd_t *cmd = PS2_Control_get_cmd();
+    xQueueOverwrite(Chassis_cmd_queue, cmd);
 }
 
 const Chassis_cmd_t *PS2_Control_get_cmd(void)
@@ -99,7 +137,3 @@ const Chassis_cmd_t *PS2_Control_get_cmd(void)
     return &ctrl_inst.cmd;
 }
 
-PS2_control_mode_e PS2_Control_get_mode(void)
-{
-    return ctrl_inst.mode;
-}

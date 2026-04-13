@@ -12,22 +12,22 @@
 #include <stdbool.h>
 
 /* PS2 按键掩码 (16-bit, 低电平有效, 取反后使用) */
-#define PS2_BTN_SELECT   (1 << 0)
-#define PS2_BTN_L3       (1 << 1)
-#define PS2_BTN_R3       (1 << 2)
-#define PS2_BTN_START    (1 << 3)
-#define PS2_BTN_UP       (1 << 4)
-#define PS2_BTN_RIGHT    (1 << 5)
-#define PS2_BTN_DOWN     (1 << 6)
-#define PS2_BTN_LEFT     (1 << 7)
-#define PS2_BTN_L2       (1 << 8)
-#define PS2_BTN_R2       (1 << 9)
-#define PS2_BTN_L1       (1 << 10)
-#define PS2_BTN_R1       (1 << 11)
-#define PS2_BTN_TRIANGLE (1 << 12)
-#define PS2_BTN_CIRCLE   (1 << 13)
-#define PS2_BTN_CROSS    (1 << 14)
-#define PS2_BTN_SQUARE   (1 << 15)
+#define PS2_BTN_SELECT   (1 << 0)  //SELECT 按键
+#define PS2_BTN_L3       (1 << 1)  //L3 按键
+#define PS2_BTN_R3       (1 << 2)  //R3 按键
+#define PS2_BTN_START    (1 << 3)  //START 按键
+#define PS2_BTN_UP       (1 << 4)  //方向上
+#define PS2_BTN_RIGHT    (1 << 5)  //方向右
+#define PS2_BTN_DOWN     (1 << 6)  //方向下
+#define PS2_BTN_LEFT     (1 << 7)  //方向左
+#define PS2_BTN_L2       (1 << 8)  //L2 按键
+#define PS2_BTN_R2       (1 << 9)  //R2 按键
+#define PS2_BTN_L1       (1 << 10) //L1 按键
+#define PS2_BTN_R1       (1 << 11) //R1 按键
+#define PS2_BTN_TRIANGLE (1 << 12) //TRIANGLE 按键
+#define PS2_BTN_CIRCLE   (1 << 13) //CIRCLE 按键
+#define PS2_BTN_CROSS    (1 << 14) //CROSS 按键
+#define PS2_BTN_SQUARE   (1 << 15) //SQUARE 按键
 
 /**
  * @brief PS2 手柄模式
@@ -67,17 +67,7 @@ void PS2_update(void);
 /**
  * @brief 获取 PS2 数据指针
  */
-const PS2_instance_t *PS2_get_data(void);
-
-/**
- * @brief 检查按键是否按下
- */
-bool PS2_is_pressed(uint16_t btn_mask);
-
-/**
- * @brief 检查按键是否刚按下 (边沿检测)
- */
-bool PS2_is_edge(uint16_t btn_mask);
+const PS2_instance_t *PS2_get_instance(void);
 
 /**
  * @brief 进入模拟模式 (锁定)

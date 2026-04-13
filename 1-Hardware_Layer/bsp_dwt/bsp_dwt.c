@@ -4,6 +4,7 @@
  */
 
 #include "bsp_dwt.h"
+#include "robot_definitions.h"
 
 static DWT_Time_t SysTime = {0};
 static uint32_t CPU_FREQ_Hz = 0;
@@ -17,7 +18,7 @@ static uint8_t  dt_initialized = 0; // 初始化标志位
 /**
  * @brief 初始化DWT
  */
-void DWT_Init(uint32_t CPU_Freq_mHz)
+void DWT_Init(void)
 {
     /* 1. 使能DWT外设 (DEMCR: Debug Exception and Monitor Control Register) */
     CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
@@ -29,7 +30,7 @@ void DWT_Init(uint32_t CPU_Freq_mHz)
     DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
 
     /* 4. 设置频率参数 */
-    CPU_FREQ_Hz = CPU_Freq_mHz * 1000000;
+    CPU_FREQ_Hz = CPU_FREQ_MHZ * 1000000;
     CPU_FREQ_Hz_ms = CPU_FREQ_Hz / 1000;
     CPU_FREQ_Hz_us = CPU_FREQ_Hz / 1000000;
 
@@ -39,7 +40,7 @@ void DWT_Init(uint32_t CPU_Freq_mHz)
 }
 
 /**
- * @brief 内部函数：更新64位计数器
+ * @brief 内部函数：更新64位计数器，最大计时时长约584年
  * @note  加入临界区保护，防止中断打断导致计数错乱
  */
 static void DWT_CNT_Update(void)

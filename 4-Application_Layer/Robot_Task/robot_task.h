@@ -16,6 +16,8 @@
 #include "bsp_can.h"
 #include "bsp_wdg.h"
 
+#include "ps2_driver.h"
+
 #include "chassis.h"
 #include "ps2_control.h"
 #include "sensor.h"

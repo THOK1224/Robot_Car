@@ -20,7 +20,7 @@ typedef struct
  * @brief 初始化DWT (必须最先调用)
  * @param CPU_Freq_mHz CPU主频 (如 168 或 180)
  */
-void DWT_Init(uint32_t CPU_Freq_mHz);
+void DWT_Init(void);
 
 /**
  * @brief 获取两次调用之间的时间间隔 (秒)

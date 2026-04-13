@@ -7,7 +7,6 @@
 #define _PS2_CONTROL_H
 
 #include "chassis.h"
-#include "ps2_driver.h"
 
 /**
  * @brief 控制模式
@@ -42,9 +41,5 @@ void PS2_Control_update(void);
  */
 const Chassis_cmd_t *PS2_Control_get_cmd(void);
 
-/**
- * @brief 获取当前模式
- */
-PS2_control_mode_e PS2_Control_get_mode(void);
 
 #endif /* _PS2_CONTROL_H */

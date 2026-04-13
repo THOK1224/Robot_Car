@@ -34,7 +34,7 @@ static void Decision_making_task(void *argument);
 void Robot_task_init(void)
 {
     /* === BSP 初始化 === */
-    DWT_Init(CPU_FREQ_MHZ);
+    DWT_Init();
     test_uart = Uart_register(&huart1, NULL);
     error_system_init(NULL);
     Can_init();
@@ -181,10 +181,6 @@ static void Decision_making_task(void *argument)
 
         /* 更新控制逻辑 */
         PS2_Control_update();
-
-        /* 发布底盘指令 */
-        const Chassis_cmd_t *cmd = PS2_Control_get_cmd();
-        xQueueOverwrite(Chassis_cmd_queue, cmd);
 
         /* 喂 IWDG */
         IWDG_Feed();

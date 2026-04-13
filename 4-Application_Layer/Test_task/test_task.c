@@ -24,7 +24,7 @@ static Test_mode_e current_test_mode = TEST_MODE_PS2;
  */
 static void _test_ps2(void)
 {
-    const PS2_instance_t *ps2 = PS2_get_data();
+    const PS2_instance_t *ps2 = PS2_get_instance();
 
     Uart_printf(test_uart,
         "[PS2] conn=%d mode=0x%02X btn=0x%04X LX=%3d LY=%3d RX=%3d RY=%3d\r\n",
