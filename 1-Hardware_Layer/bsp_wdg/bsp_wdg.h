@@ -16,6 +16,8 @@
 /** @brief 回调函数指针类型 */
 typedef void (*wdg_callback_func)(void *);
 
+#pragma pack(push, 1)
+
 /**
  * @brief 软件看门狗实例
  */
@@ -43,6 +45,8 @@ typedef struct
     void *owner_id;
     char name[16];
 } Watchdog_init_t;
+
+#pragma pack(pop)
 
 /**
  * @brief 注册软件看门狗实例

@@ -2,106 +2,95 @@
  * @file    chassis.c
  * @brief   麦克纳姆轮底盘运动学实现
  * @note    麦轮逆运动学:
- *          V_FL = vx - vy - (L+W)*omega
- *          V_FR = vx + vy + (L+W)*omega
- *          V_RL = vx + vy - (L+W)*omega
- *          V_RR = vx - vy + (L+W)*omega
- *          (L = wheel_base/2, W = track_width/2)
+ *          V_FL = vx - vy - (L+W)/2 * wz
+ *          V_FR = vx + vy + (L+W)/2 * wz
+ *          V_RL = vx + vy - (L+W)/2 * wz
+ *          V_RR = vx - vy + (L+W)/2 * wz
+ *          (L = wheel_base_mm, W = track_width_mm)
  *
- *          电机映射: M1=左前(FL), M2=左后(RL), M3=右前(FR), M4=右后(RR)
+ *          电机映射: M1=左前(FL), M2=右前(FR), M3=左后(RL), M4=右后(RR)
  */
 #include "chassis.h"
-#include "math_lib.h"
+#include "motor.h"
+#include "message_center.h"
+#include "robot_task.h"
+#include "robot_definitions.h"
 #include <string.h>
 
 /* ================= 私有变量 ================= */
 
 static Chassis_params_t chassis_params;
-static Chassis_mode_e   chassis_mode = CHASSIS_ZERO_FORCE;
-static float half_sum_LW = 0.0f;  /* (L + W) / 2, 但这里直接用 L + W 的一半 */
+static Motor_instance_t *motor = NULL;
+static Publisher_t *chassis_pub = NULL;
 
-#define SPEED_MAX  1000
-#define SPEED_MIN  (-1000)
+/* ================= 工具函数 ================= */
+
+/**
+ * @brief 麦克纳姆轮底盘运动学解算 (所有速度单位: mm/s)
+ * @param cmd    底盘控制指令
+ * @param output 解算输出结果
+ */
+static void Chassis_mecanum_kinematics(const Chassis_cmd_t *cmd, Chassis_output_t *output) {
+    // 麦克纳姆轮布局（从俯视图看）：
+    // 左前(M1)  右前(M2)
+    // 左后(M3)  右后(M4)
+
+    float half_LW = (chassis_params.wheel_base_mm + chassis_params.track_width_mm) / 2.0f;
+    float rotate  = cmd->chassis_wz * half_LW;
+
+    output->motor_speed[0] = -cmd->chassis_vx + cmd->chassis_vy + rotate;  // M1 左前
+    output->motor_speed[1] = +cmd->chassis_vx + cmd->chassis_vy + rotate;  // M2 右前
+    output->motor_speed[2] = +cmd->chassis_vx - cmd->chassis_vy + rotate;  // M3 左后
+    output->motor_speed[3] = -cmd->chassis_vx - cmd->chassis_vy + rotate;  // M4 右后
+}
 
 /* ================= 公开接口 ================= */
 
-void Chassis_init(const Chassis_params_t *params)
-{
-    if (params == NULL) return;
+void Chassis_init(void) {
+    // 1. 底盘参数初始化
+    chassis_params.wheel_radius_mm = CHASSIS_WHEEL_RADIUS_MM;
+    chassis_params.wheel_base_mm   = CHASSIS_WHEEL_BASE_MM;
+    chassis_params.track_width_mm  = CHASSIS_TRACK_WIDTH_MM;
 
-    chassis_params = *params;
+    // 2. 获取电机实例 (电机初始化由 Yabo_motor_init 统一完成)
+    motor = Motor_get_instance();
 
-    /* (wheel_base + track_width) / 2, 用于运动学系数 */
-    half_sum_LW = (params->wheel_base_mm + params->track_width_mm) / 2.0f;
-
-    chassis_mode = CHASSIS_ZERO_FORCE;
+    // 3. 注册发布者：向电机驱动发送底盘输出
+    chassis_pub = Pub_register("Chassis_output", sizeof(Chassis_output_t));
 }
 
-void Chassis_update(const Chassis_cmd_t *cmd, Chassis_output_t *output)
-{
-    if (cmd == NULL || output == NULL) return;
-
-    memset(output, 0, sizeof(Chassis_output_t));
-
-    if (chassis_mode == CHASSIS_ZERO_FORCE)
+void Chassis_update(void) {
+    // 1. 从底盘队列获取控制指令
+    Chassis_cmd_t cmd;
+    if (xQueueReceive(Chassis_cmd_queue, &cmd, pdMS_TO_TICKS(10)) != pdTRUE)
         return;
 
-    float vx = cmd->vx;
-    float vy = cmd->vy;
-    float wz = cmd->omega * half_sum_LW;  /* omega * (L+W)/2 */
+    // 2. 运动学解算
+    Chassis_output_t kin_output;
+    memset(&kin_output, 0, sizeof(kin_output));
 
-    /*
-     * 麦轮逆运动学 (各轮线速度 mm/s)
-     * FL(M1) = vx - vy - wz
-     * RL(M2) = vx + vy - wz
-     * FR(M3) = vx + vy + wz
-     * RR(M4) = vx - vy + wz
-     */
-    float wheel_speed[4];
-    wheel_speed[0] = vx - vy - wz;  /* M1: 左前 */
-    wheel_speed[1] = vx + vy - wz;  /* M2: 左后 */
-    wheel_speed[2] = vx + vy + wz;  /* M3: 右前 */
-    wheel_speed[3] = vx - vy + wz;  /* M4: 右后 */
-
-    /* 归一化: 找最大值，如果超出范围则等比缩放 */
-    float max_speed = 0.0f;
-    for (int i = 0; i < 4; i++)
-    {
-        float abs_spd = (wheel_speed[i] > 0) ? wheel_speed[i] : -wheel_speed[i];
-        if (abs_spd > max_speed)
-            max_speed = abs_spd;
+    switch (cmd.chassis_mode) {
+    case CHASSIS_ZERO_FORCE:
+        // 零力模式不解算，保持全零
+        break;
+    case CHASSIS_TRANSLATION:
+    case CHASSIS_ROTATE:
+        Chassis_mecanum_kinematics(&cmd, &kin_output);
+        break;
+    default:
+        break;
     }
 
-    /* 将 mm/s 转换为 -1000~1000 比例值 */
-    /* 假设 max_speed 对应 1000 (全速), 线性映射 */
-    /* 如果 max_speed 为 0 则输出全 0 */
-    if (max_speed > 0.01f)
-    {
-        /* 简单线性映射: speed_ratio = wheel_speed / wheel_circumference_per_sec * 1000 */
-        /* 轮周长 = 2 * pi * R, 额定转速对应的线速度 */
-        /* 这里先做简单映射: 直接用 vx=1000 对应 speed=1000 */
-        float scale = 1.0f;
-
-        /* 如果最大轮速超过 SPEED_MAX, 等比缩放 */
-        if (max_speed > (float)SPEED_MAX)
-            scale = (float)SPEED_MAX / max_speed;
-
-        for (int i = 0; i < 4; i++)
-        {
-            int16_t spd = (int16_t)(wheel_speed[i] * scale);
-            if (spd > SPEED_MAX) spd = SPEED_MAX;
-            if (spd < SPEED_MIN) spd = SPEED_MIN;
-            output->speed[i] = spd;
-        }
+    // 3. 对每个电机进行 PID 计算
+    for (int i = 0; i < 4; i++) {
+        Motor_calculate(&motor[i], kin_output.motor_speed[i]);
     }
+
+    // 4. 打包 Motor 输出并通过消息中心发布
+    Chassis_output_t pwm_output;
+    for (int i = 0; i < 4; i++) {
+        pwm_output.motor_speed[i] = motor[i].output;
+    }
+    Pub_push_message(chassis_pub, &pwm_output);
 }
 
-void Chassis_set_mode(Chassis_mode_e mode)
-{
-    chassis_mode = mode;
-}
-
-Chassis_mode_e Chassis_get_mode(void)
-{
-    return chassis_mode;
-}
