@@ -7,6 +7,7 @@
 
 /* ================= 任务句柄 ================= */
 
+osThreadId_t wdg_task_handle;
 osThreadId_t motor_task_handle;
 osThreadId_t sensor_task_handle;
 osThreadId_t chassis_task_handle;
@@ -16,7 +17,6 @@ osThreadId_t test_task_handle;
 /* ================= 队列句柄 ================= */
 
 QueueHandle_t Chassis_cmd_queue;
-QueueHandle_t Motor_cmd_queue;
 
 /* ================= 全局变量 ================= */
 
@@ -24,6 +24,7 @@ Uart_instance_t *test_uart = NULL;
 
 /* ================= 任务函数声明 ================= */
 
+static void Watchdog_control_task(void *argument);
 static void Motor_task(void *argument);
 static void Sensor_task(void *argument);
 static void Chassis_task(void *argument);
@@ -31,8 +32,7 @@ static void Decision_making_task(void *argument);
 
 /* ================= 初始化 ================= */
 
-void Robot_task_init(void)
-{
+void Robot_task_init(void) {
     /* === BSP 初始化 === */
     DWT_Init();
     test_uart = Uart_register(&huart1, NULL);
@@ -41,9 +41,16 @@ void Robot_task_init(void)
 
     /* === 创建队列 (必须在任务之前) === */
     Chassis_cmd_queue = xQueueCreate(1, sizeof(Chassis_cmd_t));
-    Motor_cmd_queue   = xQueueCreate(1, sizeof(Chassis_output_t));
 
     /* === 创建任务 === */
+
+    /* watchdog_task: 看门狗控制 */
+    const osThreadAttr_t wdg_attr = {
+        .name = "wdg_task",
+        .priority = (osPriority_t)osPriorityAboveNormal,
+        .stack_size = 512 * 4
+    };
+    wdg_task_handle = osThreadNew(Watchdog_control_task, NULL, &wdg_attr);
 
     /* motor_task: 最高优先级, 接收轮速→I2C 发送 */
     const osThreadAttr_t motor_attr = {
@@ -86,50 +93,46 @@ void Robot_task_init(void)
     // test_task_handle = osThreadNew(Test_task, NULL, &test_attr);
 }
 
+/* ================= WDG Task ================= */
+
+void Watchdog_control_task(void *argument) {
+    (void)argument;
+     // 任务主循环
+    for (;;) {
+        Watchdog_control_all();
+        // 任务延时10ms，保持100Hz的运行频率
+        osDelay(10);
+    }
+
+}
+
 /* ================= Motor Task ================= */
 
-static void Motor_task(void *argument)
-{
+static void Motor_task(void *argument) {
     (void)argument;
 
     /* 初始化电机驱动 */
-    Yabo_motor_init_config_t motor_cfg = {
-        .i2c_handle        = &hi2c2,
-        .motor_type        = MOTOR_TYPE,
-        .encoder_ppr       = MOTOR_ENCODER_PPR,
-        .gear_ratio        = MOTOR_GEAR_RATIO,
-        .wheel_diameter_mm = MOTOR_WHEEL_DIAMETER_MM,
-        .deadzone          = MOTOR_DEADZONE,
-    };
-    Yabo_motor_init(&motor_cfg);
+    Motor_init();
+    Yabo_motor_init();
 
-    Chassis_output_t motor_output;
-
-    for (;;)
-    {
-        /* 等待底盘解算结果 */
-        if (xQueueReceive(Motor_cmd_queue, &motor_output, pdMS_TO_TICKS(10)) == pdTRUE)
-        {
-            Yabo_motor_set_speed(motor_output.speed);
-        }
-
-        /* 读取编码器反馈 */
+    for (;;) {
+        /* 驱动周期更新: 编码器反馈 + PWM 下发 */
         Yabo_motor_update();
+
+        osDelay(10);
     }
 }
 
 /* ================= Sensor Task ================= */
 
-static void Sensor_task(void *argument)
-{
+static void Sensor_task(void *argument) {
     (void)argument;
 
     Sensor_init();
 
     TickType_t PreviousWakeTime = xTaskGetTickCount();
 
-    for (;;)
-    {
+    for (;;) {
         Sensor_update();
         vTaskDelayUntil(&PreviousWakeTime, pdMS_TO_TICKS(10));
     }
@@ -137,51 +140,34 @@ static void Sensor_task(void *argument)
 
 /* ================= Chassis Task ================= */
 
-static void Chassis_task(void *argument)
-{
+static void Chassis_task(void *argument) {
     (void)argument;
 
     /* 初始化底盘 */
-    Chassis_params_t chassis_params = {
-        .wheel_radius_mm = CHASSIS_WHEEL_RADIUS_MM,
-        .wheel_base_mm   = CHASSIS_WHEEL_BASE_MM,
-        .track_width_mm  = CHASSIS_TRACK_WIDTH_MM,
-    };
-    Chassis_init(&chassis_params);
-    Chassis_set_mode(CHASSIS_NO_FOLLOW);
+    Chassis_init();
 
-    Chassis_cmd_t cmd;
-    Chassis_output_t output;
+    for (;;) {
+        /* 底盘周期更新: 队列接收 → 解算 → PID → 发布 */
+        Chassis_update();
 
-    for (;;)
-    {
-        /* 接收底盘速度指令 */
-        if (xQueueReceive(Chassis_cmd_queue, &cmd, pdMS_TO_TICKS(10)) == pdTRUE)
-        {
-            Chassis_update(&cmd, &output);
-            xQueueOverwrite(Motor_cmd_queue, &output);
-        }
+        osDelay(10);
     }
 }
 
 /* ================= Decision Making Task ================= */
 
-static void Decision_making_task(void *argument)
-{
+static void Decision_making_task(void *argument) {
     (void)argument;
 
     /* 初始化 PS2 和控制逻辑 */
     PS2_init();
     PS2_Control_init();
 
-    for (;;)
-    {
+    for (;;) {
         /* 读取 PS2 数据 */
         PS2_update();
-
         /* 更新控制逻辑 */
         PS2_Control_update();
-
         /* 喂 IWDG */
         IWDG_Feed();
 

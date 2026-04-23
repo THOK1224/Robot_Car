@@ -18,6 +18,7 @@
 
 #include "ps2_driver.h"
 
+#include "motor.h"
 #include "chassis.h"
 #include "ps2_control.h"
 #include "sensor.h"
@@ -27,6 +28,7 @@
 #include "test_task.h"
 
 /* 任务句柄 */
+extern osThreadId_t wdg_task_handle;
 extern osThreadId_t motor_task_handle;
 extern osThreadId_t sensor_task_handle;
 extern osThreadId_t chassis_task_handle;
@@ -35,7 +37,6 @@ extern osThreadId_t test_task_handle;
 
 /* 队列句柄 */
 extern QueueHandle_t Chassis_cmd_queue;
-extern QueueHandle_t Motor_cmd_queue;
 
 /* 全局串口实例 */
 extern Uart_instance_t *test_uart;

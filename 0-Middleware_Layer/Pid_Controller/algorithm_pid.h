@@ -15,14 +15,14 @@
  */
 typedef enum
 {
-    PID_OPTIMIZE_NONE           = 0x00,
-    PID_OUTPUT_LIMIT            = 0x01,
-    PID_DIFFERENTIAL_GO_FIRST   = 0x02,
-    PID_TRAPEZOID_INTERGRAL     = 0x04,
-    PID_OUTPUT_FILTER           = 0x08,
-    PID_FEEDFOWARD              = 0x10,
-    PID_INTEGRAL_ANTI_WINDUP    = 0x20,
-    PID_INTEGRAL_SEPARATION     = 0x40,
+    PID_OPTIMIZE_NONE           = 0x00, // 无优化
+    PID_OUTPUT_LIMIT            = 0x01, // 输出限幅 (优先级最高)
+    PID_DIFFERENTIAL_GO_FIRST   = 0x02, // 微分先行 (适用于测量噪声较大时)
+    PID_TRAPEZOID_INTERGRAL     = 0x04, // 梯形积分 (误差变化较大时防止积分过冲)
+    PID_OUTPUT_FILTER           = 0x08, // 输出低通滤波 (适用于执行机构响应慢时)
+    PID_FEEDFOWARD              = 0x10, // 前馈控制 (适用于存在明显可测扰动时，如底盘反向速度补偿)
+    PID_INTEGRAL_ANTI_WINDUP    = 0x20, // 积分反向保护 (适用于负载变化大时防止积分反向过度补偿)
+    PID_INTEGRAL_SEPARATION     = 0x40, // 积分分离 (适用于大误差时防止积分过度积累)
 } Pid_optimization_e;
 
 /**

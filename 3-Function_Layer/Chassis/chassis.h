@@ -9,12 +9,15 @@
 
 #include <stdint.h>
 
+#pragma pack(push, 1)
+
 /**
  * @brief 底盘模式
  */
 typedef enum {
-    CHASSIS_ZERO_FORCE = 0,  /**< 零力模式 (电机不输出) */
-    CHASSIS_NO_FOLLOW,       /**< 正常底盘运动 */
+    CHASSIS_ZERO_FORCE = 0,  /**< 零力模式 (电机不输出) **/
+    CHASSIS_TRANSLATION,     /**< 底盘平动运动 **/
+    CHASSIS_ROTATE,          /**< 底盘旋转运动 **/
 } Chassis_mode_e;
 
 /**
@@ -27,42 +30,22 @@ typedef struct {
 } Chassis_params_t;
 
 /**
- * @brief 底盘速度指令
- */
-typedef struct {
-    float vx;       /**< X 方向速度 (mm/s, 前为正) */
-    float vy;       /**< Y 方向速度 (mm/s, 左为正) */
-    float omega;    /**< 旋转角速度 (rad/s, 逆时针为正) */
-} Chassis_cmd_t;
-
-/**
  * @brief 底盘输出 (4 轮目标速度)
  */
 typedef struct {
-    int16_t speed[4];   /**< M1~M4 目标速度 (-1000~1000) */
+    float motor_speed[4];   /**< M1~M4 目标速度 */
 } Chassis_output_t;
 
-/**
- * @brief 初始化底盘模块
- * @param params 底盘物理参数
- */
-void Chassis_init(const Chassis_params_t *params);
+#pragma pack(pop)
 
 /**
- * @brief 运动学解算 (vx,vy,omega → 4 轮速)
- * @param cmd    速度指令输入
- * @param output 4 轮速度输出
+ * @brief 初始化底盘模块 (参数、电机、消息中心)
  */
-void Chassis_update(const Chassis_cmd_t *cmd, Chassis_output_t *output);
+void Chassis_init(void);
 
 /**
- * @brief 设置底盘模式
+ * @brief 底盘周期更新 (从队列获取指令 → 解算 → PID → 发布)
  */
-void Chassis_set_mode(Chassis_mode_e mode);
-
-/**
- * @brief 获取底盘模式
- */
-Chassis_mode_e Chassis_get_mode(void);
+void Chassis_update(void);
 
 #endif /* _CHASSIS_H */

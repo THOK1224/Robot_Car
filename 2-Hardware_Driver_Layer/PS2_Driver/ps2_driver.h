@@ -29,6 +29,7 @@
 #define PS2_BTN_CROSS    (1 << 14) //CROSS 按键
 #define PS2_BTN_SQUARE   (1 << 15) //SQUARE 按键
 
+#pragma pack(push, 1)
 /**
  * @brief PS2 手柄模式
  */
@@ -53,6 +54,8 @@ typedef struct {
     PS2_mode_e mode;            /**< 手柄模式 */
     bool connected;             /**< 是否已连接 */
 } PS2_instance_t;
+
+#pragma pack(pop)
 
 /**
  * @brief 初始化 PS2 手柄

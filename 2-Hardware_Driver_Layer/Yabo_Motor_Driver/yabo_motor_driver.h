@@ -30,6 +30,8 @@
 #define YABO_REG_ENCODER_RT_M4  0x13
 #define YABO_REG_ENCODER_TOT_M1 0x20
 
+#pragma pack(push, 1)
+
 /**
  * @brief 电机类型枚举
  */
@@ -41,18 +43,6 @@ typedef enum {
 } Yabo_motor_type_e;
 
 /**
- * @brief 初始化配置
- */
-typedef struct {
-    I2C_HandleTypeDef *i2c_handle;     /**< I2C 句柄 */
-    Yabo_motor_type_e motor_type;      /**< 电机类型 */
-    uint16_t encoder_ppr;              /**< 编码器磁环线数 */
-    uint16_t gear_ratio;               /**< 减速比 */
-    float    wheel_diameter_mm;        /**< 轮子直径 (mm) */
-    uint16_t deadzone;                 /**< 死区 (0-3600) */
-} Yabo_motor_init_config_t;
-
-/**
  * @brief 电机驱动实例
  */
 typedef struct {
@@ -62,6 +52,14 @@ typedef struct {
     int16_t  encoder_rt[4];            /**< 实时编码器脉冲 (10ms) */
     int32_t  encoder_total[4];         /**< 总编码器脉冲 */
 
+    /* 速度反馈 (由编码器解算) */
+    float    speed_feedback[4];        /**< 各电机速度 (mm/s) */
+
+    /* 配置参数 (用于编码器→速度解算) */
+    uint16_t encoder_ppr;              /**< 编码器磁环线数 */
+    uint16_t gear_ratio;               /**< 减速比 */
+    float    wheel_diameter_mm;        /**< 轮子直径 (mm) */
+
     /* 电池 */
     float    battery_voltage;          /**< 电池电压 (V) */
 
@@ -69,36 +67,26 @@ typedef struct {
     bool     connected;                /**< 通信是否正常 */
 } Yabo_motor_instance_t;
 
+#pragma pack(pop)
+
 /**
  * @brief 初始化电机驱动 (配置电机类型、编码器等参数)
  */
-void Yabo_motor_init(Yabo_motor_init_config_t *cfg);
+void Yabo_motor_init(void);
 
 /**
- * @brief 读取编码器和电池数据
+ * @brief 电机驱动周期更新 (编码器反馈 + PWM 下发)
  */
 void Yabo_motor_update(void);
-
-/**
- * @brief 设置 4 路速度 (带编码器, -1000~1000)
- * @param speed 4 个电机的目标速度
- */
-void Yabo_motor_set_speed(int16_t speed[4]);
-
-/**
- * @brief 设置 4 路 PWM (-3600~3600)
- * @param pwm 4 个电机的 PWM 值
- */
-void Yabo_motor_set_pwm(int16_t pwm[4]);
-
-/**
- * @brief 获取电池电压
- */
-float Yabo_motor_get_battery(void);
 
 /**
  * @brief 获取电机实例指针
  */
 const Yabo_motor_instance_t *Yabo_motor_get_instance(void);
+
+/**
+ * @brief 获取速度反馈数组指针 (4 个 float, mm/s)
+ */
+float *Yabo_motor_get_speed_feedback(void);
 
 #endif /* _YABO_MOTOR_DRIVER_H */

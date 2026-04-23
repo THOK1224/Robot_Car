@@ -61,6 +61,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     1-Hardware_Layer/bsp_iic/bsp_iic.c
 
     # Hardware Driver Layer
+    2-Hardware_Driver_Layer/Motor/motor.c
     2-Hardware_Driver_Layer/Ultrasonic/ultrasonic.c
     2-Hardware_Driver_Layer/PS2_Driver/ps2_driver.c
     2-Hardware_Driver_Layer/Yabo_Motor_Driver/yabo_motor_driver.c
@@ -94,6 +95,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     1-Hardware_Layer/bsp_iic
 
     # Hardware Driver Layer
+    2-Hardware_Driver_Layer/Motor
     2-Hardware_Driver_Layer/Ultrasonic
     2-Hardware_Driver_Layer/PS2_Driver
     2-Hardware_Driver_Layer/Yabo_Motor_Driver
